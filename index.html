@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <title>Блочная модель</title>
+</head>
+
+<body>
+    <h1>Заголовок</h1>
+    <p>Параграф</p>
+    <div class="box">Блок</div>
+    <div class="box">Блок</div>
+    <div class="box">Блок</div>
+    <b>Текст</b><i>Наклонный</i>
+    <a class="link" href="">Ссылка</a>
+    <span class="inline">Строчный</span>
+    <span class="inline">Строчный</span>
+    <span class="inline">Строчный</span>
+
+    <!-- Блочная модель -->
+
+    <h2>Блочная модель</h2>
+    <p>
+        Блочная модель определяет внутреннюю структуру блочных элементов:
+    </p>
+    <ul>
+        <li>Область контента – содержимое тега.</li>
+        <li>Внутренний отступ для контента (свойство padding).</li>
+        <li>Граница элемента (свойство border).</li>
+        <li>Внешний отступ (свойство margin).</li>
+    </ul>
+
+    <p>
+        Наглядно блочную модель для определённого элемента можно увидеть в браузере в инструментах разработчика.
+    </p>
+
+    <div class="block">
+        <div class="content">Content</div>
+    </div>
+    <div class="block1">
+        <div class="content1">Content</div>
+    </div>
+
+    <!-- Строчные элементы -->
+
+    <p>Попробуем теперь применить свойства блочных элементов к строчному элементу &lt;span&gt;. Если таких
+        элементов будет много и они будут занимать несколько строк, то вёрстка собьётся.</p>
+    <span class="text">span</span>
+    <span class="text">span</span>
+    <span class="text">span</span>
+    <span class="text">span</span>
+    <span class="text">span</span>
+    <span class="text">span</span>
+    <span class="text">span</span>
+
+    <!-- Коллапс марджинов -->
+
+    <h2>margin collapsing</h2>
+    <div class="block2">
+        Блок
+    </div>
+    <div class="block2">
+        Блок
+    </div>
+    <div class="block2">
+        Блок
+    </div>
+    <div class="block2">
+        Блок
+    </div>
+
+    <!-- Проценты -->
+    <h2>Размеры</h2>
+    <div class="wrap">
+        <div class="block3">Блок</div>
+    </div>
+</body>
+
+</html>
